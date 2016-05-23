@@ -16,7 +16,7 @@ public class ArrayListPractice {
         for(String i:two){
             System.out.println(i);
         }
-        // Changes to verify commit 123456
+
         System.out.println(" ");
 
         for (int i = 0; i < two.size(); i++) {
