@@ -25,7 +25,7 @@ public class ArrayListPractice {
         System.out.println(" ");
         //Rename value in ArrayList
         two.set(0,"C'mon, everybody");
-
+///some changes to test GitHub
         for(String i:two){
             System.out.println(i);
         }
