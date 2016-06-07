@@ -23,7 +23,7 @@ public class VerifyValidCredentials {
         //Assert.assertTrue(logPage.error_message.getText().contains("Не вірний логін або пароль."));
 
         //can be used in both ways
-        Assert.assertEquals(logPage.error_message.getText(), error);
+        Assert.assertEquals(logPage.error_message.getText(), error, "Error message is different from expected");
 
         driver.close();
     }
