@@ -1,6 +1,7 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -19,9 +20,12 @@ public class VerifyValidCredentials {
 
 
         logPage.loginProceeded("Dima", "admin");
-       Assert.assertTrue(logPage.error_message.getText().contains("Не вірний логін або пароль."));
+        //Assert.assertTrue(logPage.error_message.getText().contains("Не вірний логін або пароль."));
+
+        //can be used in both ways
+        Assert.assertEquals(logPage.error_message.getText(), error);
+
         driver.close();
     }
-
 
 }
